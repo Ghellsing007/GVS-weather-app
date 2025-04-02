@@ -1,7 +1,7 @@
 🌦️ Descripción para GitHub
 App de Clima – V0 + React + Tailwind CSS
 
-Esta es una aplicación web de clima en tiempo real, diseñada con enfoque moderno y responsivo usando React y Tailwind CSS. El diseño fue generado con V0.dev, lo que garantiza una estructura visual limpia, intuitiva y lista para producción.
+Esta es una aplicación web de clima en tiempo real, diseñada con enfoque moderno y responsivo usando React y Tailwind CSS. lo que garantiza una estructura visual limpia, intuitiva y lista para producción.
 
 🚀 Funcionalidades destacadas:
 Búsqueda por ciudad para consultar el clima actual.
