@@ -35,30 +35,30 @@ export default function DailyForecast({ dailyData }: DailyForecastProps) {
   }
 
   return (
-    <Card>
+    <Card className="w-full">
       <CardHeader>
         <CardTitle>Pronóstico de 5 días</CardTitle>
       </CardHeader>
       <CardContent>
-        <div className="space-y-2">
+        <div className="space-y-3">
           {dailyData.map((day, index) => (
             <div
               key={index}
-              className="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition-colors"
+              className="flex items-center justify-between p-2 rounded-lg hover:bg-gray-50 transition-colors w-full gap-7"
             >
-              <div className="flex items-center">
-                <div className="mr-4 w-10">{getWeatherIcon(day.condition)}</div>
-                <span className="font-medium">{day.day}</span>
+              <div className="flex items-center space-x-4 min-w-0">
+                <div className="w-6 flex-shrink-0">{getWeatherIcon(day.condition)}</div>
+                <span className="font-medium truncate">{day.day}</span>
               </div>
-              <div className="flex items-center space-x-4">
-                <span className="text-gray-500">{day.min}°</span>
-                <div className="w-20 h-2 bg-gray-100 rounded-full overflow-hidden">
+              <div className="flex items-center space-x-3 flex-shrink-0">
+                <span className="text-gray-500 text-sm">{day.min}°</span>
+                <div className="w-16 h-1.5 bg-gray-100 rounded-full overflow-hidden">
                   <div
                     className="h-full bg-gradient-to-r from-blue-300 to-orange-300 rounded-full"
                     style={{ width: "100%" }}
                   />
                 </div>
-                <span className="font-medium">{day.max}°</span>
+                <span className="font-medium text-sm">{day.max}°</span>
               </div>
             </div>
           ))}
@@ -67,4 +67,3 @@ export default function DailyForecast({ dailyData }: DailyForecastProps) {
     </Card>
   )
 }
-
